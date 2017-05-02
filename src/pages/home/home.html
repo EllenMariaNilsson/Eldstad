@@ -1,33 +1,68 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Hem</ion-title>
+    <ion-title>Hem </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding class="home">
   <ion-card>
-    <ion-card-header> Välkommen till Eldstad  <ion-icon name="heart"></ion-icon> </ion-card-header>
+    <ion-card-header text-center> Välkommen till Eldstad  <ion-icon name="heart"></ion-icon> </ion-card-header>
       <div class="col col-33">
        <img src="assets/icon/eldstadoriginal.jpg"/>
       </div>
        <p> 
          Vad är Eldstad?
          Syftet med Eldstad är att hjälpa varandra att njuta av vår vackra natur. 
-         Navigera i appen genom verktygsfältet nedan.
          Under Eldstäder kan man se befintliga camping platser! 
-      </p>
+       </p>
   </ion-card>
 
   <ion-card>
-    <ion-card-header>
-    Favoritplatser
+    <ion-card-header text-center>
+       Eldstäder i din närhet <ion-icon name="md-pin"></ion-icon>
     </ion-card-header>
-  </ion-card>
+     <img src="../assets/campingspots/samplemap.png">
 
-<ion-card>
-    <ion-card-header>
-    Lägg till platser
-    </ion-card-header>
-  </ion-card>
+        <ion-item-divider>
+        </ion-item-divider>
+          <ion-item>
+          <ion-thumbnail item-left>
+            <img src="../assets/campingspots/australia2.jpg">
+          </ion-thumbnail>
+            <h2>Rushworth</h2>
+             <p>Victoria, Australien</p>
+               <button ion-button clear item-right (click)="goToSomethingElse()">Utforska</button>
+          </ion-item>
 
+         <ion-item>
+           <span item-left>18 min</span>
+             <span item-left>(2.6 km)</span>
+              <button ion-button icon-left clear item-right>
+                <ion-icon name="navigate"></ion-icon>
+                  Starta
+             </button>
+        </ion-item>
+
+    <ion-item-divider>Här kan det stå lite information om platsen.</ion-item-divider>
+
+    <ion-item>
+          <ion-thumbnail item-left>
+            <img src="../assets/campingspots/australia2.jpg">
+          </ion-thumbnail>
+            <h2>Rushworth</h2>
+             <p>Victoria, Australien</p>
+               <button ion-button clear item-right (click)="goToSomethingElse()">Utforska</button>
+          </ion-item>
+
+         <ion-item>
+           <span item-left>18 min</span>
+             <span item-left>(2.6 km)</span>
+              <button ion-button icon-left clear item-right>
+                <ion-icon name="navigate"></ion-icon>
+                  Starta
+             </button>
+        </ion-item>
+
+    <ion-item-divider>Här kan det stå lite information om platsen.</ion-item-divider>
+  </ion-card>
 </ion-content>
